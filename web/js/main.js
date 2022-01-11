@@ -163,7 +163,7 @@ function addData5(data) {
     myChart5.update(0);
 }
 
-function addData6(data) {
+addData6 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
