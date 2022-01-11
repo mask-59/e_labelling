@@ -99,7 +99,7 @@ function addData1(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef1').textContent = data + '%'
+    document.getElementById("ef1").textContent = data + '%'
     myChart1.update(0);
 }
 
@@ -114,7 +114,7 @@ function addData2(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef2').textContent = data + '%'
+    document.getElementById("ef2").textContent = data + '%'
     myChart2.update(0);
 }
 
@@ -129,7 +129,7 @@ function addData3(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef3').textContent = data + '%'
+    document.getElementById("ef3").textContent = data + '%'
     myChart3.update(0);
 }
 
@@ -144,7 +144,7 @@ function addData4(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef4').textContent = data + '%'
+    document.getElementById("ef4").textContent = data + '%'
     myChart4.update(0);
 }
 
@@ -159,7 +159,7 @@ function addData5(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef5').textContent = data + '%'
+    document.getElementById("ef5").textContent = data + '%'
     myChart5.update(0);
 }
 
@@ -174,7 +174,7 @@ function addData6(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById('ef6').textContent = data + '%'
+    document.getElementById("ef6").textContent = data + '%'
     myChart6.update(0);
 }
 
