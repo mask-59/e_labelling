@@ -99,7 +99,7 @@ addData1 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef1").textContent = data + '%'
+    // document.getElementById("ef1").textContent = data + '%'
     myChart1.update(0);
 }
 
@@ -114,7 +114,7 @@ addData2 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef2").textContent = data + '%'
+    // document.getElementById("ef2").textContent = data + '%'
     myChart2.update(0);
 }
 
@@ -129,7 +129,7 @@ addData3 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef3").textContent = data + '%'
+    // document.getElementById("ef3").textContent = data + '%'
     myChart3.update(0);
 }
 
@@ -144,7 +144,7 @@ addData4 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef4").textContent = data + '%'
+    // document.getElementById("ef4").textContent = data + '%'
     myChart4.update(0);
 }
 
@@ -159,7 +159,7 @@ addData5 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef5").textContent = data + '%'
+    // document.getElementById("ef5").textContent = data + '%'
     myChart5.update(0);
 }
 
@@ -327,7 +327,7 @@ function set_metrics(pload) {
                 eff = (payload.lspeed / target_l6) * 100
                 console.log("L6 efficiency" + eff)
                 addData6(eff)
-                document.getElementById("ef6").textContent = eff + '%'
+                    // document.getElementById("ef6").textContent = eff + '%'
 
                 break;
 
