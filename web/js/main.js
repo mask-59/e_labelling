@@ -88,7 +88,7 @@ function toObject(map) {
     return obj;
 }
 
-function addData1(data) {
+addData1 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
@@ -99,11 +99,11 @@ function addData1(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef1").textContent = data + '%'
+    ef1.textContent = data + '%'
     myChart1.update(0);
 }
 
-function addData2(data) {
+addData2 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
@@ -114,11 +114,11 @@ function addData2(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef2").textContent = data + '%'
+    ef2.textContent = data + '%'
     myChart2.update(0);
 }
 
-function addData3(data) {
+addData3 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
@@ -133,7 +133,7 @@ function addData3(data) {
     myChart3.update(0);
 }
 
-function addData4(data) {
+addData4 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
@@ -148,7 +148,7 @@ function addData4(data) {
     myChart4.update(0);
 }
 
-function addData5(data) {
+addData5 = (data) => {
     data = Math.round(data)
     data > 100 ? data : 100
     colo = perc2color(data)
@@ -159,7 +159,7 @@ function addData5(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef5").textContent = data + '%'
+    ef5.textContent = data + '%'
     myChart5.update(0);
 }
 
