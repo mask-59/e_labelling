@@ -327,7 +327,7 @@ function set_metrics(pload) {
                 eff = (payload.lspeed / target_l6) * 100
                 console.log("L6 efficiency" + eff)
                 addData6(eff)
-                document.getElementById("ef6").textContent = eff + '%'
+                document.getElementById("cases6").textContent = eff + '%'
 
                 break;
 
