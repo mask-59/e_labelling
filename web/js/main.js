@@ -174,7 +174,7 @@ addData6 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef6").textContent = data + '%'
+
     myChart6.update(0);
 }
 
@@ -325,8 +325,10 @@ function set_metrics(pload) {
             case 6:
                 document.getElementById("target6").innerHTML = target_l6
                 eff = (payload.lspeed / target_l6) * 100
+                console.log("L6 efficiency" + eff)
                 addData6(eff)
-                console.log("L6 target" + target_l6)
+                document.getElementById("ef6").textContent = eff + '%'
+
                 break;
 
             default:
