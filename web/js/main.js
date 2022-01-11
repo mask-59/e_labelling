@@ -99,7 +99,7 @@ addData1 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    ef1.textContent = data + '%'
+    document.getElementById("ef1").textContent = data + '%'
     myChart1.update(0);
 }
 
@@ -114,7 +114,7 @@ addData2 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    ef2.textContent = data + '%'
+    document.getElementById("ef2").textContent = data + '%'
     myChart2.update(0);
 }
 
@@ -159,7 +159,7 @@ addData5 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    ef5.textContent = data + '%'
+    document.getElementById("ef5").textContent = data + '%'
     myChart5.update(0);
 }
 
@@ -174,7 +174,7 @@ addData6 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    ef6.textContent = data + '%'
+    document.getElementById("ef6").textContent = data + '%'
     myChart6.update(0);
 }
 
