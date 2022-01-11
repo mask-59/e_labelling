@@ -144,7 +144,7 @@ addData4 = (data) => {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef4").textContent = data + '%'
+    document.getElementById("ef4").textContent = data
     myChart4.update(0);
 }
 
