@@ -174,7 +174,7 @@ function addData6(data) {
         dataset.data[1] = alt;
         dataset.backgroundColor[0] = colo
     });
-    document.getElementById("ef6").textContent = data + '%'
+    ef6.textContent = data + '%'
     myChart6.update(0);
 }
 
