@@ -3,6 +3,7 @@ from paho.mqtt import client as mqtt
 import os
 from dotenv import load_dotenv
 from resetRpi import restart
+from gethourly import hcases
 from cleanchrome import cleanchrome
 
 cleanchrome()
@@ -46,7 +47,14 @@ def messageSender(msg):
 
 # {"clientID":"L1","cans":"0","packs":"0","lcases":"0","cases":"0","lspeed":"0","tstamp":"13917942","targetcases":"240","canspercase":"24","unitspercase":"1","hr_output":"0,0,0,0,0,0,0,0,0"}
 
-
+def get_hcases():
+    lcase = hcases(os.getenv('LEFT'))
+    try: 
+        eel.hcases(lcase)
+    except:
+        print(str(os.getenv('LEFT')) + ": Could not render hourly cases: " + str(rcase))
+    
+    
    
 
 eel.start('index.html', host='localhost', port=27011, size=(1280,960), position=(0,0), cmdline_args=['--disable-infobars','--Kiosk'] )

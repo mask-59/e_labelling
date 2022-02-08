@@ -299,42 +299,62 @@ function set_metrics(pload) {
         switch (parseInt(lab_num)) {
             case 1:
                 document.getElementById("target1").innerHTML = target_l1
-                eff = (payload.lspeed / target_l1) * 100
+                eff = Math.floor((payload.lspeed / target_l1) * 100)
                 addData1(eff)
                 console.log(target_l1)
                 break;
             case 2:
                 document.getElementById("target2").innerHTML = target_l2
-                eff = (payload.lspeed / target_l2) * 100
+                eff = Math.floor((payload.lspeed / target_l2) * 100)
                 addData2(eff)
                 break;
             case 3:
                 document.getElementById("target3").innerHTML = target_l3
-                eff = (payload.lspeed / target_l3) * 100
+                eff = Math.floor((payload.lspeed / target_l3) * 100)
                 addData3(eff)
                 break;
             case 4:
                 document.getElementById("target4").innerHTML = target_l4
-                eff = (payload.lspeed / target_l4) * 100
+                eff = Math.floor((payload.lspeed / target_l4) * 100)
                 addData4(eff)
                 break;
             case 5:
                 document.getElementById("target5").innerHTML = target_l5
-                eff = (payload.lspeed / target_l5) * 100
+                eff = Math.floor((payload.lspeed / target_l5) * 100)
                 addData5(eff)
                 break;
             case 6:
                 document.getElementById("target6").innerHTML = target_l6
-                eff = (payload.lspeed / target_l6) * 100
+                eff = Math.floor((payload.lspeed / target_l6) * 100)
                 console.log("L6 efficiency" + eff)
                 addData6(eff)
 
                 break;
 
             default:
+                s
                 break;
         }
 
     }
 
+}
+
+
+// hourly cases
+
+eel.expose(hcases);
+
+function hcases(data) {
+    if (JSON.parse(data)) {
+        data = JSON.parse(data)
+        data = data.data
+        data = (data.reduce((data, b) => data.set(b.hr, (data.get(b.hr) || 0) + Number(b.cases)), new Map))
+        data = Array.from(data, ([name, value]) => ({ name, value }));
+        const sumcases = sumarray(data)
+        assigndata(data, 'l')
+        document.getElementById("cases1").innerHTML = sumcases
+    } else {
+        return 0;
+    }
 }
