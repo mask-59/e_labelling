@@ -49,7 +49,8 @@ def messageSender(msg):
 @eel.expose
 def get_hcases():
     try: 
-        eel.hcases()
+        eel.hcases(hcases())
+        
     except:
         print( ": Could not render labelling cases : ")
     
