@@ -291,7 +291,7 @@ function set_metrics(pload) {
         //client id
         document.getElementById("l" + lab_num).innerHTML = 'LABELLER ' + lab_num
             // cans
-        document.getElementById("cans" + lab_num).innerHTML = payload.cans
+            // document.getElementById("cans" + lab_num).innerHTML = payload.cans
             // speed
         document.getElementById("speed" + lab_num).innerHTML = payload.lspeed
             // efficiency
@@ -332,7 +332,7 @@ function set_metrics(pload) {
                 break;
 
             default:
-                s
+
                 break;
         }
 
@@ -352,6 +352,7 @@ function hcases(data) {
         data = data.data
         for (const line of data) {
             document.getElementById("cases" + line.line).innerHTML = line.cases
+            document.getElementById("ceff" + line.line).innerHTML = line.ceff
         }
     } else {
         return 0;
