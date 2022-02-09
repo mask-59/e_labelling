@@ -360,3 +360,7 @@ function hcases(data) {
         return 0;
     }
 }
+eel.get_hcases()
+setInterval(function() {
+    eel.get_hcases()
+}, 1000 * 60 * 1);
