@@ -2,11 +2,11 @@ import requests
 import os
 from dotenv import load_dotenv
 load_dotenv()
-def hcases(line):
-    print('getting hourly for line'+ line)
+def hcases():
+    print('getting hourly for all lines Labelling')
     print('---------------')
     url = os.getenv('GET_HCASES_URL') 
-    x = requests.get(url + line)
+    x = requests.get(url)
     print(x.text)
     print('---------------')
     return (x.text)

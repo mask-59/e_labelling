@@ -48,11 +48,10 @@ def messageSender(msg):
 # {"clientID":"L1","cans":"0","packs":"0","lcases":"0","cases":"0","lspeed":"0","tstamp":"13917942","targetcases":"240","canspercase":"24","unitspercase":"1","hr_output":"0,0,0,0,0,0,0,0,0"}
 @eel.expose
 def get_hcases():
-    lcase = hcases(os.getenv('LEFT'))
     try: 
-        eel.hcases(lcase)
+        eel.hcases()
     except:
-        print(str(os.getenv('LEFT')) + ": Could not render hourly cases: " + str(rcase))
+        print( ": Could not render labelling cases : ")
     
     
    
